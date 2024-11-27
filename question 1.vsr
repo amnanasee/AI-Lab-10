@@ -1,0 +1,32 @@
+
+(property scale 100)
+
+(vrl_instance vhnsnyqm expression [(= size {72 24}) (= selected 1)] 324 300 [(text 1 `>0` [(= fore vrl_valid) (= visible 2)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance ufpjwubk statement [(= size {120 60}) (= selected 3)] 312 366 [(text 1 `Density` [(= visible 2) (= edited 1)]) (text 2 `X` [(= visible 2)]) (text 3 `X is 'Weight'/'Height'` [(= visible 2) (= edited 1)])])
+
+(vrl_instance xtmbgakj end [(= size {72 24}) (= selected 1)] 336 492 [(text 1 `end1` [(= visible 2)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance lnccpmuv start [(= size {72 24}) (= selected 1)] 336 24 [(text 1 `start1` [(= visible 2)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance uzcblisp expression [(= size {72 24}) (= selected 1)] 324 168 [(text 1 ` >0` [(= fore vrl_valid) (= visible 2)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance llarebuf code [(= size {156 24}) (= selected 1)] 306 444 [(text 1 `flash('density is',Density)` [(= visible 2) (= edited 1)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance vlpeghzy question [(= question_type integer_input) (= size {72 60}) (= selected 1)] 336 66 [(text 1 `Height` [(= visible 2) (= edited 1)]) (text 2 `prompt` [(= visible 2)]) (text 3 `explanation` [(= visible 2)])])
+
+(vrl_instance zposrnmx question [(= question_type integer_input) (= size {72 60}) (= selected 1)] 312 210 [(text 1 `Weight` [(= visible 2) (= edited 1)]) (text 2 `prompt` [(= visible 2)]) (text 3 `explanation` [(= visible 2)])])
+
+(vrl_instance {vhnsnyqm ufpjwubk} link [] vhnsnyqm ufpjwubk [arrow line])
+
+(vrl_instance {ufpjwubk llarebuf} link [] ufpjwubk llarebuf [arrow line])
+
+(vrl_instance {llarebuf xtmbgakj} link [] llarebuf xtmbgakj [arrow line])
+
+(vrl_instance {lnccpmuv vlpeghzy} link [] lnccpmuv vlpeghzy [arrow line])
+
+(vrl_instance {vlpeghzy uzcblisp} link [] vlpeghzy uzcblisp [arrow line])
+
+(vrl_instance {zposrnmx vhnsnyqm} link [] zposrnmx vhnsnyqm [arrow line])
+
+(vrl_instance {uzcblisp zposrnmx} link [] uzcblisp zposrnmx [arrow line])
